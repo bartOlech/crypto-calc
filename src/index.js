@@ -91,13 +91,13 @@ buttonRefresh.addEventListener('click', function(){
 
 ethImage.addEventListener('click', function(e){
     e.preventDefault();
-    document.querySelector('#infoCoin').innerHTML='(ETH)'
+    document.querySelector('#infoCoin').innerHTML='(ETH)&nbsp;&nbsp;'
     firstChoice.style.display='none';
     secondChoice.style.display='flex';
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość ETH')
     zloty.addEventListener('click', function(){
-        document.querySelector('#infoCurrency').innerHTML='(ZL)'
+        document.querySelector('#infoCurrency').innerHTML='(ZL)&nbsp;&nbsp;&nbsp;'
         choiceZloty(array[1]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');
@@ -114,21 +114,21 @@ ethImage.addEventListener('click', function(e){
 })
 
 btcImage.addEventListener('click', function(e){
-    
+    document.querySelector('#infoCoin').innerHTML='(BTC)&nbsp; &nbsp;'
     e.preventDefault();
     firstChoice.style.display='none';
     secondChoice.style.display='flex';
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość BTC');
     zloty.addEventListener('click', function(){
-        document.querySelector('#infoCurrency').innerHTML='(ZL)'
+        document.querySelector('#infoCurrency').innerHTML='(ZL)&nbsp;&nbsp;&nbsp;&nbsp;'
         choiceZloty(array[0]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');
         document.querySelector('#currencyValue').setAttribute('placeholder', 'wprowadź ilość PLN')
     })
     dolar.addEventListener('click', function(){
-        document.querySelector('#infoCurrency').innerHTML='(USD)'
+        document.querySelector('#infoCurrency').innerHTML='(USD)&nbsp;'
         choiceDolar(array[0])
         zloty.style.display='none';
         removeHover2.classList.remove('Hover2');
@@ -138,13 +138,13 @@ btcImage.addEventListener('click', function(e){
 
 ltcImage.addEventListener('click', function(e){
     e.preventDefault();
-    document.querySelector('#infoCoin').innerHTML='(LTC)'
+    document.querySelector('#infoCoin').innerHTML='(LTC)&nbsp; &nbsp;'
     firstChoice.style.display='none';
     secondChoice.style.display='flex';
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość LTC');
     zloty.addEventListener('click', function(){
-        document.querySelector('#infoCurrency').innerHTML='(ZL)'
+        document.querySelector('#infoCurrency').innerHTML='(ZL)&nbsp;&nbsp;&nbsp;'
         choiceZloty(array[2]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');

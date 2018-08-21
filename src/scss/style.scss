@@ -1,0 +1,249 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image:url('../logo/wallpaper/wallpaper.png');
+    box-sizing: border-box;
+}  
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+  }
+  .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
+.tittle{
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    font-size:50px;
+    font-family:  Georgia;
+}
+.mainSection{
+    display:flex;
+    flex-direction: column;
+}
+.mainSection h2{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+}
+.mainImageCurrency{
+    display:flex;
+    justify-content: center;
+}
+.imageCurrency{
+    border:1px solid rgba(161, 152, 152, 0.3);;
+    border-radius: 5px; 
+    margin:15px;
+}
+.Hover:hover{
+    background-color: rgba(66, 66, 66, 0.2);
+}.Hover2:hover{
+    background-color: rgba(66, 66, 66, 0.2);
+}
+#mainForm{
+    display:flex;
+    justify-content: center;
+    margin-top:100px;
+    text-align: center;
+}
+.formPosition{
+    display:flex;
+    flex-direction: row;
+    margin-left:44px;
+}
+
+#mainForm label{
+    font-family: 'Song Myung', serif; 
+}
+#mainForm #currencyValue, #mainForm #currencyValue2{
+    margin:15px;
+    margin-right:0px;
+    background-color: rgba(119, 118, 118, 0.1);
+    border:1px solid rgb(138, 138, 138);
+    height:20px;
+    border-radius: 2px;
+    color:black;
+}
+.buttonCheck{
+    background:#CC0033;
+    color:#fff;
+    border:0;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:700; 
+    border-radius:.2rem;
+    cursor:pointer;
+    height:25px;
+    width:120px;
+
+}
+.nextCryptocurrency{
+    margin:15px;
+    height:20px;
+    border-radius: 2px;
+    color:black;
+    display:none;
+    justify-content: center;
+    margin-top:7px;
+    margin-bottom:80px;
+    width:100vw;
+}
+.nextCryptocurrency div{
+    margin-bottom:100px;
+}
+.isVisible{
+    display:none;
+}
+.currencyExchangeInfo{
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    width:200px;
+    border-bottom-right-radius: 4px;
+    background-color:rgba(6, 104, 196, 0.1);
+    text-align:justify;
+}
+.infoRate{
+    margin-left:40px;
+}
+.horizontalLine{
+    height:3px;
+    width:200px;
+    background-color:rgb(85, 76, 76);
+    animation-name:line;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+@keyframes rotation{
+    0%{transform:rotate(0deg)}
+    50%{transform:rotate(90deg)}
+    100%{transform:rotate(180deg)}
+  }
+@keyframes line{
+    0%{width:0px;}
+    100%{width:200px;}
+}
+.inputArrow{
+    margin-left:15px;
+}
+.buttonRefresh{
+    width:50px;
+    height:50px;
+    float:right;
+    background-image:url('../logo/refresh-icon\ .png');
+    border-radius:10px;
+    margin:10px;
+    cursor: pointer;
+}
+.buttonRefresh:hover{
+    opacity:0.8;
+   
+}
+.zl{
+    background-image: url('../logo/zloty2.png');
+    background-position: center;
+    background-size: cover;
+}
+.dol{
+    background-image: url('../logo/icons8-dolar-100.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.lt{
+    background-image: url('../logo/ltc.png');
+    background-position: center;
+    background-size: cover;
+}
+.bt{
+    background-image: url('../logo/btc.png');
+    background-position: center;
+    background-size: cover;
+}
+.et{
+    background-image: url('../logo/eth.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main{
+    margin-right:-70px;
+}
+.inputArrowDown{
+    display:none;
+}
+.inputZl{
+    margin-left:-12px;
+}
+@media only screen and (max-width:530px){
+    .formPosition{
+        flex-direction: column;
+        align-items:center;
+    }
+    .inputArrow{
+        display:none
+    }
+    .inputArrowDown{
+        display:inline;
+        margin-left:-35px;
+    }
+    .mainImageCurrency{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+.buttonClick {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.4s ease-in;
+  //start click effect
+  &:before {
+    content: '';
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+  }
+  &:focus {
+    outline: 0;
+    color: #fff;
+    &:before {
+      animation: effect_dylan 0.8s ease-out;
+    }
+  }
+}
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,29 @@
+/src/image/*
+
+# dependencies
+/node_modules
+/public/manifest.json
+/public/favicon.ico
+package-lock.json
+package.json
+
+# testing
+/coverage
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#
+src/logo
+
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

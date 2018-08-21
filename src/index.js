@@ -41,10 +41,10 @@ setInterval(function(){
 .then(resp=>{
     resp.forEach(element => {
         if(element.id==='ethereum'){
-            array[0]=element.price_usd
+            array[1]=element.price_usd
       document.querySelector('#ethPrice').innerHTML=`<b>ETH<b>: ${element.price_usd}$`;
         }else if(element.id==='bitcoin'){
-            array[1]=element.price_usd
+            array[0]=element.price_usd
             document.querySelector('#btcPrice').innerHTML=`<b>BTC<b>: ${element.price_usd}$`;
         }else if(element.id==='litecoin'){
             array[2]=element.price_usd
@@ -97,6 +97,7 @@ ethImage.addEventListener('click', function(e){
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość ETH')
     zloty.addEventListener('click', function(){
+        document.querySelector('#infoCurrency').innerHTML='(ZL)'
         choiceZloty(array[1]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');
@@ -120,6 +121,7 @@ btcImage.addEventListener('click', function(e){
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość BTC');
     zloty.addEventListener('click', function(){
+        document.querySelector('#infoCurrency').innerHTML='(ZL)'
         choiceZloty(array[0]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');
@@ -142,6 +144,7 @@ ltcImage.addEventListener('click', function(e){
     chooseInfoText.innerHTML='Chcę wymienić na:';
     document.querySelector('#currencyValue2').setAttribute('placeholder', 'wprowadź ilość LTC');
     zloty.addEventListener('click', function(){
+        document.querySelector('#infoCurrency').innerHTML='(ZL)'
         choiceZloty(array[2]);
         dolar.style.display='none';
         removeHover.classList.remove('Hover');

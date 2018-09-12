@@ -1,11 +1,11 @@
-/src/image/*
+#/src/image/*
 
 # dependencies
 /node_modules
 /public/manifest.json
 /public/favicon.ico
-package-lock.json
-package.json
+#package-lock.json
+#package.json
 
 # testing
 /coverage

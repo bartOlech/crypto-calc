@@ -1,7 +1,7 @@
 {
-  "name": "apka_mecz",
+  "name": "apka",
   "version": "1.0.0",
-  "description": "wynik meczu",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",

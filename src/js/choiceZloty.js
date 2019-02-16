@@ -17,9 +17,9 @@ export const choiceZloty=(Cvalue)=>{
         let zloty=input1.value;
         let crypto=input2.value;
         if(fieldNumber==2){
-        input1.value=Math.round((crypto*Cvalue*3.7) * 100) / 100
+        input1.value=Math.round((crypto*Cvalue*3.8) * 100) / 100
         }else if(fieldNumber==1){
-            input2.value=Math.round((zloty/Cvalue/3.7) * 10000) / 10000
+            input2.value=Math.round((zloty/Cvalue/3.8) * 10000) / 10000
         }
         
     })

@@ -32,6 +32,10 @@ body{
     font-weight:bold;
     font-size:50px;
     font-family:  Georgia;
+    color: #001830;
+}
+#chooseInfoText{
+    color: #001830;
 }
 .mainSection{
     display:flex;
@@ -55,6 +59,7 @@ body{
     border-radius: 5px; 
     margin:15px;
     animation:imageOpacity 1s;
+    cursor: pointer;
 }
 .Hover:hover{
     background-color:$imageHoverBackground;
@@ -79,9 +84,8 @@ body{
 #mainForm #currencyValue, #mainForm #currencyValue2{
     margin:15px;
     margin-right:0px;
-    background-color: rgba(119, 118, 118, 0.1);
-    border:1px solid rgb(138, 138, 138);
-    height:20px;
+    border: 1px solid #a7a7a7;
+    height:25px;
     border-radius: 2px;
     color:black;
 }
@@ -135,7 +139,7 @@ body{
     margin-top:2px;
     background-color: #ff9d2f;
     animation-name:line;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count:infinite;
     animation-timing-function:linear;
 }
@@ -183,7 +187,8 @@ body{
 .lt{
     background-image: url('../logo/ltc.png');
     background-position: center;
-    background-size: cover;
+    background-size: 80%;
+    background-repeat: no-repeat;  
 }
 .bt{
     background-image: url('../logo/btc.png');

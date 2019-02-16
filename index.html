@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/waves.scss">
+</head>
+<body>
+      
+<div id="load">
+    <div class="load">
+        <hr/><hr/><hr/><hr/>
+    </div>
+</div>
+<div id="contents">
+    <div class='buttonRefresh' id='buttonRefresh'></div>
+    <section class='mainSection'>
+        <div class='currencyExchangeInfo'>
+            <div class='infoRate' id='ethPrice'></div>
+            <div class='infoRate' id='btcPrice'></div>
+            <div class='infoRate' id='ltcPrice'></div>
+        </div>
+        <div class='main'><div class='horizontalLine'> </div>
+        <h1 class='tittle'>Crypto Calc</h1>
+        <h2 id='chooseInfoText'>Chcę wymienić:</h2>
+        <div class='nextCryptocurrency'>
+            <div style='width:100px; height:100px;'  id='zloty' class='imageCurrency Hover zl'></div>
+            <div style='width:100px; height:100px;'   id='dolar' class='imageCurrency Hover2 dol'></div>
+        </div>
+        <div class='mainImageCurrency '>
+            <div alt='logo' style='width:100px; height:100px;' id='litecoin' class='imageCurrency Hover lt '></div>
+            <div style='width:100px; height:100px;' id='bitcoin' class='imageCurrency Hover bt'></div>
+            <div style='width:100px; height:100px;' id='etherum' class='imageCurrency Hover et'></div>
+        </div>
+        <form id='mainForm'>
+            <div class='isVisible'>
+                <label class='inputField' for='currencyValue'>Podaj ilość </label></br>
+                <div class='formPosition'>
+                    <div class='inputZl'><input type='text' id='currencyValue' class=''/><span id='infoCurrency'>(ZŁ)</span><span class='inputArrow'>&#8594; </span></div>
+                    <div><span class='inputArrowDown'>&#x2193;</span></div> 
+                    <div><input type='text' id='currencyValue2' class=''/><span id='infoCoin'>(BTC)</span> </div> 
+                </div>
+                <button class='buttonCheck buttonClick' id='inputButton'>Sprawdź</button>
+            </div>
+        </form>
+    </div>
+    </section>
+</div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
